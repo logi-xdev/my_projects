@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Home | MyProject{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card card-ui text-center p-5">
+            <h1 class="fw-bold">Student Task Manager</h1>
+            <p class="text-muted mt-3">
+                Organize your tasks, track progress, and stay productive.
+            </p>
+            <div class="mt-4">
+                <a href="{% url 'tasks' %}" class="btn btn-main">View Tasks</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

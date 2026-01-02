@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Add Task | MyProject{% endblock %}
+
+{% block content %}
+<h2>Add New Task</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <input type="text" name="title" class="form-control" placeholder="Task Title" required>
+    </div>
+    <div class="mb-3">
+        <textarea name="description" class="form-control" placeholder="Task Description"></textarea>
+    </div>
+    <button class="btn btn-primary">Add Task</button>
+</form>
+{% endblock %}
